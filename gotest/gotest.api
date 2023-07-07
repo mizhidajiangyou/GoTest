@@ -1,0 +1,29 @@
+type Request {
+	Args []string `json:"args"`
+}
+
+type ListRequset {
+	Name *string `json:"name"`
+}
+
+type BashRequset {
+	Parameters []string `json:"parameters"`
+}
+
+type ResponseMore {
+	Code    int    `json:"code"`
+	Data    string `json:"data"`
+	Message string `json:"message"`
+}
+
+type Response {
+	Message string `json:"message"`
+}
+
+service gotest-api {
+	@handler BashListHandler
+	get /bash/list (ListRequset) returns (Response)
+	
+	@handler BashCustomHandler
+	post /bash/normal (BashRequset) returns (Response)
+}
