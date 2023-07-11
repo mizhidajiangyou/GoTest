@@ -1,3 +1,4 @@
 /gotest/tarpack/
 .idea
 /gotest/go.sum
+/ui/node_modules

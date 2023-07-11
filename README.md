@@ -1,5 +1,5 @@
 # GoTest
-基于go-zero框架的测试工具
+基于vue+nginx+gozero的可视化测试工具
 
 * goctl
 ```go get -u github.com/tal-tech/go-zero/tools/goctl```
