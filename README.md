@@ -11,4 +11,4 @@
 e.g.
 
 1、 使用一个通用的shell脚本    
-```curl -H "Content-Type: application/json" -X POST -d '{"args": "\[Asd,vasd\]"}' "127.0.0.1:18080/bash/normal"```
+```curl -H "Content-Type: application/json" -X POST -d '{"parameters": "\[Asd,vasd\]"}' "127.0.0.1:18080/bash/normal"```

@@ -1,15 +1,15 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<!--  <img alt="Vue logo" src="./assets/logo.png">-->
+  <RunBash msg="run bash"/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import RunBash from './view/RunBash'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    RunBash
   }
 }
 </script>

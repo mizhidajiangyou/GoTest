@@ -2,3 +2,4 @@
 .idea
 /gotest/go.sum
 /ui/node_modules
+nginx.conf

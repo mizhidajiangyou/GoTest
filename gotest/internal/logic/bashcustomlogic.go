@@ -31,6 +31,7 @@ func (l *BashCustomLogic) BashCustom(req *types.BashRequset) (resp *types.Respon
 		resp.Message = fmt.Sprintf("Error: %s", err)
 		return
 	}
+	resp.Message = fmt.Sprintf("run with %v successful", req)
 
 	return
 }
