@@ -1,0 +1,5 @@
+User: test1
+Admin: admin1
+Password: password1
+AdminPasswd: password2
+BaseURL: https://playwright.dev/docs/intro
