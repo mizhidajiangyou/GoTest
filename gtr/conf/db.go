@@ -30,11 +30,10 @@ type CaseData struct {
 }
 
 func init() {
-	c := "global.yaml"
-	//ReadIni(c)
-	//log.SetLogLevel(Conf.Log.Level)
-	log.Debugf(fmt.Sprintf("加载配置文件%s", c))
-	db.ReadDBConf(c)
+	ReadYaml()
+	log.SetLogLevel(Conf.Log.Level)
+	log.Debugf(fmt.Sprintf("成功加载配置文件%s", confFilePath))
+	db.ReadDBConf(confFilePath)
 	e, err := db.StartDb()
 	if err != nil {
 		return
